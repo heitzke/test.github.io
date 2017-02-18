@@ -32,6 +32,7 @@ module.exports = React.createClass({
           {head.title.toComponent()}
           {head.meta.toComponent()}
           <TypographyStyle typography={typography} />
+          <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
           <GoogleFont typography={typography} />
           {css}
         </head>

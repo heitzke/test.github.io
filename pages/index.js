@@ -7,7 +7,9 @@ import { rhythm } from 'utils/typography'
 import Helmet from "react-helmet"
 import { config } from 'config'
 import include from 'underscore.string/include'
+import Header from 'components/Header'
 import Bio from 'components/Bio'
+import 'main.scss'
 
 class BlogIndex extends React.Component {
   render () {
@@ -19,6 +21,7 @@ class BlogIndex extends React.Component {
     ))
     return (
       <div>
+        <Header />
         <Helmet
           title={config.blogTitle}
           meta={[
